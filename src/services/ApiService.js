@@ -67,7 +67,7 @@ export default {
       headers: {
         "Content-Type": "application/json"
       },
-      mode: "no-cors"
+      mode: "cors"
     }).then(stream => {
       if (stream.ok) {
         return stream.json();
