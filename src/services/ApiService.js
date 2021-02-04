@@ -1,5 +1,4 @@
-const apiUrl =
-  "http://venkatbookstorebackend-env.eba-9huh7qwa.us-east-1.elasticbeanstalk.com/api";
+const apiUrl = "https://venkat-bookstore.herokuapp.com/api";
 
 export default {
   fetchBooks() {
