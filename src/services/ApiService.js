@@ -66,7 +66,8 @@ export default {
       body: JSON.stringify(order),
       headers: {
         "Content-Type": "application/json"
-      }
+      },
+      mode: "no-cors"
     }).then(stream => {
       if (stream.ok) {
         return stream.json();
