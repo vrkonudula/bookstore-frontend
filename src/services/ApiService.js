@@ -65,9 +65,9 @@ export default {
       method: "POST",
       body: JSON.stringify(order),
       headers: {
-        "Content-Type": "application/json"
-      },
-      mode: "cors"
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
+      }
     }).then(stream => {
       if (stream.ok) {
         return stream.json();
